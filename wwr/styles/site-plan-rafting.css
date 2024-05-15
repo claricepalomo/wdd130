@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #264653;
     --secondary-color: #2a9d8f;
@@ -21,6 +15,16 @@ body {
     --nav-hover-background-color: #264653;
 }
 
+body {
+    font-family: var(--paragraph-font);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -28,12 +32,16 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     color: var(--primary-color);
 }
 
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+    color: var(--blue);
 }
 
 p {
@@ -49,7 +57,6 @@ nav {
 nav a {
     display: block;
     color: var(--nav-link-color);
-    text-decoration: none;
     padding: 1rem;
 }
 
@@ -61,4 +68,9 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+.color-paragraph {
+    background-color: var(--black);
+    color: var(--white);
 }
